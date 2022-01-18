@@ -8,7 +8,7 @@ node default {
   }
   file {"/etc/nginx/nginx.conf":
     ensure => present,
-    source => "/tmp/puppet/nginx.conf",
+    source => "/devops_puppet_config/nginx.conf",
     notify => Service["nginx"],
   }
 }
